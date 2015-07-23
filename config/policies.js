@@ -34,6 +34,12 @@ module.exports.policies = {
   * and its actions                                                          *
   *                                                                          *
   ***************************************************************************/
+PostController: {
+  'create': 'sessionAuth',
+  'delete': 'sessionAuth',
+  'update': 'sessionAuth'
+}
+
 	// RabbitController: {
 
 		// Apply the `false` policy as the default for all of RabbitController's actions

@@ -33,7 +33,13 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    controller: 'PostController',
+    action: 'read'
+  },
+
+  'GET /post': {
+    controller: 'PostController',
+    action: 'read'
   }
 
   /***************************************************************************
